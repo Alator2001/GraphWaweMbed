@@ -1,0 +1,21 @@
+{
+    "target_overrides": {
+        "*": {
+            
+            "target.network-default-interface-type": "WIFI",
+            "nsapi.default-wifi-security": "WPA_WPA2",
+            "nsapi.default-wifi-ssid": "\"EVM804\"",
+            "nsapi.default-wifi-password": "\"00230101\"",
+            "esp8266.provide-default" : true,
+            "esp8266.tx" : "PA_9",
+            "esp8266.rx" : "PA_10",
+            "esp8266.built-in-dns": true,
+            "esp8266.socket-bufsize": "1024",
+            "esp8266.debug": false,
+            "platform.stdio-convert-newlines": true,
+            "platform.stdio-baud-rate": 115200,
+            "platform.default-serial-baud-rate": 115200,
+            "target.printf_lib" : "std"
+        }
+    }
+}

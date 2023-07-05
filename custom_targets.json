@@ -1,0 +1,30 @@
+{
+    "BLACKPILL_F401CC": {
+        "inherits": [
+            "MCU_STM32F4"
+        ],
+        "extra_labels_add": [
+            "STM32F401xC"
+        ],
+        "macros_add": [
+            "STM32F401xC"
+        ],
+        "config": {
+            "hse_value": {
+                "help": "Explicit HSE value (25MHz)",
+                "value": "25000000",
+                "macro_name": "HSE_VALUE"
+            }
+        },
+        "overrides": {
+            "clock_source": "USE_PLL_HSE_XTAL | USE_PLL_HSI",
+            "rtc_clock_source": "USE_RTC_CLK_LSE_OR_LSI",
+            "lse_available": 1,
+            "default-adc-vref": "3.3f"
+        },
+        "detect_code": [
+            "1234"
+        ],
+        "device_name": "STM32F401CCUx"
+    }
+}
